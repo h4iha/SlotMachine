@@ -600,7 +600,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   textNumber: {fileID: 394593480}
   number: 0
-  speed: 0.25
+  speed: 1
 --- !u!1 &516027595
 GameObject:
   m_ObjectHideFlags: 0
@@ -857,7 +857,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   textNumber: {fileID: 739078857}
   number: 0
-  speed: 0.5
+  speed: 1
 --- !u!1 &929327960
 GameObject:
   m_ObjectHideFlags: 0
@@ -1349,7 +1349,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   textNumber: {fileID: 1656541962}
   number: 0
-  speed: 1
+  speed: 2
 --- !u!1 &1780130222
 GameObject:
   m_ObjectHideFlags: 0
