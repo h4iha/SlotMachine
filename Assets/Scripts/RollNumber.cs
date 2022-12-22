@@ -1,38 +1,37 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
-using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.UI;
 
 public class RollNumber : MonoBehaviour
 {
+    public int index;
     public Text textNumber;
     public int number;
+    public int choosenumber;
+    public float fixspeed = 1;
+    public float timer;
     public float speed;
-    private float timer;
 
     void Start()
     {
         number = 0;
-        textNumber.text = number.ToString();
+        speed = 0.05f * (float) index;
     }
-
-    // Update is called once per frame
     void Update()
     {
         timer += Time.deltaTime;
 
-        if (timer >= speed)
+        if (timer >= speed && speed > 0) 
         {
             Run0_9();
             timer = 0;
         }
-
-        
+        textNumber.text = number.ToString();
     }
 
-    void Run0_9() {
+    public void Run0_9() {
         if (number > 8)
         {
             number = 0;
@@ -40,4 +39,5 @@ public class RollNumber : MonoBehaviour
         number++;
         textNumber.text = number.ToString();
     }
+
 }
